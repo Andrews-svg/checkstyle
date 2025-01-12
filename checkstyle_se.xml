@@ -11,52 +11,52 @@
     </module>
 
     <module name="TreeWalker">
-        <!-- Проверка наименований классов -->
+        <!-- Checking class names -->
         <module name="ClassName">
             <property name="format" value="^[A-Z][a-zA-Z0-9]*$"/>
             <message key="className.invalid" value="Invalid class name: {0}."/>
         </module>
 
-        <!-- Проверка наименований методов -->
+       <!-- Checking method names -->
         <module name="MethodName">
             <property name="format" value="^([a-z][a-zA-Z0-9]*)|^(get|set)[A-Z][a-zA-Z0-9]*$"/>
             <message key="methodName.invalid" value="Invalid method name: {0}."/>
         </module>
 
-        <!-- Проверка наименований переменных -->
+       <!-- Checking the names of variables -->
         <module name="LocalVariableName">
             <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
             <message key="localVariableName.invalid" value="Invalid local variable name: {0}."/>
         </module>
 
-        <!-- Проверка наименований констант -->
+        <!-- Checking the names of constants -->
         <module name="ConstantName">
             <property name="format" value="^[A-Z][A-Z0-9_]*$"/>
             <message key="constantName.invalid" value="Invalid constant name: {0}."/>
         </module>
 
-        <!-- Проверка длины методов -->
+        <!-- Checking the length of methods -->
         <module name="MethodLength">
             <property name="max" value="50"/>
             <message key="maxLen.method" value="Метод слишком длинный, максимальная длина {0,number,integer}."/>
         </module>
 
-        <!-- Проверка пустых блоков -->
+        <!-- Checking for empty blocks -->
         <module name="EmptyBlock">
             <message key="emptyBlock" value="Empty block found."/>
         </module>
 
-        <!-- Проверка на использование фигурных скобок -->
+      <!-- Checking for curly braces -->
         <module name="NeedBraces">
             <message key="needBraces" value="Тело ''{0}'' должно быть заключено в '{}'."/>
         </module>
 
-        <!-- Проверка на неиспользуемые импорты -->
+       <!-- Checking for unused imports -->
         <module name="UnusedImports">
             <message key="import.unused" value="Неиспользуемый импорт класса - {0}."/>
         </module>
 
-        <!-- Проверка на наличие JavaDoc для классов и методов -->
+       <!-- Checking for JavaDoc for classes and methods -->
         <module name="JavadocType">
             <message key="javadoc.missing" value="Отсутствует Javadoc для класса {0}."/>
         </module>
