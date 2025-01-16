@@ -12,7 +12,7 @@
 
     <module name="TreeWalker">
         <!-- Checking class names -->
-        <module name="ClassName">
+        <module name="com.puppycrawl.tools.checkstyle.checks.naming.ClassNameCheck">
             <property name="format" value="^[A-Z][a-zA-Z0-9]*$"/>
             <message key="className.invalid" value="Invalid class name: {0}."/>
         </module>
